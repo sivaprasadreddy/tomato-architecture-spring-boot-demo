@@ -37,6 +37,7 @@ class CatalogService implements CatalogAPI {
     }
 
     @Override
+    @Transactional
     public void updatePrice(String code, BigDecimal price) {
         productRepository.updatePrice(code, price);
     }
