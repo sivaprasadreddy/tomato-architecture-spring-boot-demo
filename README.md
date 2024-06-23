@@ -19,6 +19,8 @@ A sample Spring Boot application following [Tomato Architecture](https://github.
 The application is configured to use Docker Compose to start the dependent services (Postgres, Kafka).
 You can simply run `BookStoreApplication.java` from your IDE to start the application.
 
+**NOTE:** To work with Kafka transparently from both local and container, add `127.0.0.1   broker` entry in `/etc/hosts` file.
+
 To know more about Spring Boot Docker Compose Support, you can watch the following video.
 
 [![Spring Boot Docker Compose Support](https://img.youtube.com/vi/PZt5EJTLH4o/0.jpg)](https://www.youtube.com/watch?v=PZt5EJTLH4o)
